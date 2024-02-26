@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            color: whitesmoke;
+            flex-wrap: wrap;
+        }
+        
+        .header-list{
+            list-style: none;
+           padding: 0.8em;
+        }
+        
+        .header-link{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        header{
+            height: 60px;
+            background-color: green;
+            display: grid;
+            place-items: center;
+            width: 100%; 
+        }
+
+        .section{
+            background:linear-gradient(green,blue);
+            z-index: 100;
+            position: absolute;
+            opacity:0.3;
+            width: 100%;
+            height: 250px;
+        }
+
+        .mountain{
+            background-image: url('mount.jpg');
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed ;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact{
+           font-size: 3em;
+           color: white; 
+           z-index: 200;
+        }
+
+        .background-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 500px;
+        }
+
+        .background-2 div{
+            width: 40%;
+        }
+
+        .background-2 h3{
+            color: green;
+        }
+
+        .background-2 p{
+            margin-top: 1em;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        .background-7{
+            background-color: rgb(27,147,87);
+            color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            height: 250px;
+            align-items: center;
+            margin-top: 2em;
+        }
+        
+        .f-div{
+            color: white;
+            transition: 1s;
+        }
+        
+        .f-div:hover{
+            text-decoration: none;
+            color: rgb(245,240,18);
+            transition:.5s;
+        }
+        
+        footer{
+            height: 60px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons{
+            display:flex;
+            justify-content: space-between;
+            width: 250px;
+        }
+        
+        .icons div{
+            background-color: white;
+            width:120px;
+            border-radius: 50%;
+            height:50px;
+            margin-left: 10px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons div img{
+            scale: 50%;
+        }
+
+        @media(max-width:900px){
+            header{
+                height: 100px;
+            }
+        }
+        @media(max-width:768px){
+            .background-2{
+                flex-wrap: wrap;
+            }
+
+            .background-2 img{
+                width: 100%;
+                margin-top: 3em;
+            }
+
+            .background-2 div{
+                width: 100%;
+            }
+
+            .background-7{
+                margin-top: 17em;
+                flex-direction: column;
+                height: 800px;    
+            }
+
+            header{
+                height: 130px;
+            }
+
+            .background-2 div{
+                margin-top: 1em;
+            }
+
+            body{
+                font-size: 0.85em;
+            }
+
+        }
+        @media(max-width:400px){
+
+            header{
+                height:150px;
+            }
+           
+
+            body{
+                font-size: 0.7em;
+            }
+
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="header-ul">
+                <li class="header-list"><a class="header-link" href="home.html">Home</a></li>
+                <li class="header-list"><a class="header-link"href="who-we-are.html">Who we are</a></li>
+                <li class="header-list"><a class="header-link"href="academic.html">Academic Events</a></li>
+                <li class="header-list"><a class="header-link"href="publication.html">Publication</a></li>
+                <li class="header-list"><a class="header-link"href="randd.html">R & D Forum</a></li>
+                <li class="header-list"><a class="header-link"href="contact.html">Contact</a></li>
+                <li class="header-list"><a class="header-link"href="submit.html">Submit Abstract</a></li>
+                <li class="header-list"><a class="header-link"href="submit-article.html">Paper Submission</a></li>
+                <li class="header-list"><a class="header-link"href="adhoc.html">ADHOC Members</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="section"></div>
+            <div class="mountain"><h1 class="contact"></h1></div>
+        </section>
+
+        <div class="background-2">
+            <div>
+                <h3>research & development forum</h4>
+                <p>Although the University is nascent, the Centre for Research and Development (CERAD) of Bamidele Olumilua University of Education, Science and Technology (BOUESTI) has great scholars who are working assiduously in the areas of education, science and technology. Since its establishment in 2020, the Centre has processed and managed institution based research (IBR) grant from TETFund. Also, a scholar won a national reserve fund (NRF) grant from TETFund. The list of beneficiaries and their research titles are presented here List of the Beneficiaries and their approved research titles.</p>
+            </div>
+
+            <img src="randd.jpg">
+        </div>
+
+        <div class="background-7">
+            <div class="icons">
+                <div>
+                    <a href="#"><img  src="users-267.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="youtube.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="linkedin-logo-2430.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="mail-2544.png"></a>
+                </div>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="margin-top:2em;"><a class="f-div"  href="who-we-are.html">Who we are</a></p>
+                <p><a class="f-div" href="academic.html/">Academic Events</a></p>
+                <p><a class="f-div" href="publication.html">Publications</a></p>
+                <p><a class="f-div" href="randd.html">Research and Developement Forum</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/cerad-website/">CERAD WEBSITE</a></p>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>connect</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="https://www.ceradconference.com/colloquium/">Colloquium</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/summit-exhibition/">Submit And Exhibition</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/workshop/">Workshop</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/frequently-ask-questions/">Frequently Asked Questions</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/conferences/">ICEST 2021 confrences</a></p>
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright © 2024 International Conference, Bamidele Olumilua University of Education, Science and Technology | Powered by  Remonic IT Consultant
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>

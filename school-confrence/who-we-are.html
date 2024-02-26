@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            color: whitesmoke;
+            flex-wrap: wrap;
+        }
+        
+        .header-list{
+            list-style: none;
+            padding: 0.8em;
+        }
+        
+        .header-link{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        header{
+            height: 60px;
+            background-color: green;
+            display: grid;
+            place-items: center;
+            width: 100%; 
+            
+        }
+
+        .section{
+            background:linear-gradient(green,blue);
+            z-index: 100;
+            position: absolute;
+            opacity:0.3;
+            width: 100%;
+            height: 350px;
+        }
+
+        .mountain{
+            background-image: url('mount.jpg');
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed ;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact{
+           font-size: 3em;
+           color: white; 
+           z-index: 200;
+        }
+
+        .background-2{
+            margin-top: 5em;
+        }
+
+        .b-2-flex{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-1, .flex-2{
+            width: 45%;
+        }
+
+        .flex-1 div ul{
+            margin-left: 2em;
+            margin-top: 2em;
+            line-height: 24px;
+        }
+
+        .flex-1 .ppp{
+            margin-top: 5em;
+            line-height: 25px;;
+        }
+
+        .flex-1 .ppp a{
+            color: green;
+        }
+
+        .flex-2 .margin-d{
+            margin-top: 5em;
+            line-height: 25px  ;
+        }
+
+        .flex-2 p{
+            margin-top: 2em;
+            font-weight: bolder;
+        }
+
+        .background-7{
+            background-color: rgb(27,147,87);
+            color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            height: 250px;
+            align-items: center;
+            margin-top: 2em;
+        }
+        
+        .f-div{
+            color: white;
+            transition: 1s;
+        }
+        
+        .f-div:hover{
+            text-decoration: none;
+            color: rgb(245,240,18);
+            transition:.5s;
+        }
+        
+        footer{
+            height: 60px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons{
+            display:flex;
+            justify-content: space-between;
+            width: 250px;
+        }
+        
+        .icons div{
+            background-color: white;
+            width:120px;
+            border-radius: 50%;
+            height:50px;
+            margin-left: 10px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons div img{
+            scale: 50%;
+        }
+
+        @media (max-width: 1150px){
+            header{
+                height:80px ;
+            }
+
+        }
+        @media (max-width: 900px){
+            header{
+                height: 80px;
+            }
+
+
+        }
+        @media (max-width: 768px){
+            header{
+                height: 100px;
+            }
+
+            body{
+                font-size: 0.85em;
+            }
+
+            .b-2-flex{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .flex-1, .flex-2{
+                width: 100%;
+                padding: 1em;
+            }
+            .background-7{
+                margin-top: 0em;
+                flex-direction: column;
+                height: 600px;    
+                }
+
+        }
+        @media (max-width: 400px){
+            header{
+                height: 130px;
+            }
+
+            body{
+                font-size: 0.75em;
+            }
+
+            .background-7{
+                margin-top: 0em;
+                flex-direction: column;
+                height: 600px;    
+                }
+
+        }
+        
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="header-ul">
+                <li class="header-list"><a class="header-link" href="home.html">Home</a></li>
+                <li class="header-list"><a class="header-link"href="who-we-are.html">Who we are</a></li>
+                <li class="header-list"><a class="header-link"href="academic.html">Academic Events</a></li>
+                <li class="header-list"><a class="header-link"href="publication.html">Publication</a></li>
+                <li class="header-list"><a class="header-link"href="randd.html">R & D Forum</a></li>
+                <li class="header-list"><a class="header-link"href="contact.html">Contact</a></li>
+                <li class="header-list"><a class="header-link"href="submit.html">Submit Abstract</a></li>
+                <li class="header-list"><a class="header-link"href="submit-article.html">Paper Submission</a></li>
+                <li class="header-list"><a class="header-link"href="adhoc.html">ADHOC Members</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="section"></div>
+            <div class="mountain"><h1 class="contact">ABOUT US</h1></div>
+        </section>
+
+        <div class="background-2">
+            <div class="b-2-flex">
+
+                <div class="flex-1">
+                    <div>
+                        <p><strong>CERAD Services</strong></p>
+                        <ul>
+                            <li>Preparation of Power point presentation slides</li>
+                            <li>Article editing and formatting</li>
+                            <li>Preparation of References using software</li>
+                            <li>Checking f  or plagiarism using software</li>
+                        </ul>
+                    </div>
+
+                    <p class="ppp">Make your request the following email:<a href="cerad.info@bouesti.edu.ng">cerad.info@bouesti.edu.ng</a>  or contact this number: 090 within the hours of 8.00 am and 4.00 pm - <br>Monday – Friday.</p>
+                </div>
+
+
+                <div class="flex-2">
+                    <div style="line-height:25px;"><strong>The Centre for Research and Development (CERAD) has been anchoring research, training and organising conferences in the Bamidele Olumilua University of Education, Science and Technology, located at Ikere-Ekiti, Nigeria.</strong></div>
+                    <div class="margin-d"><strong>Hence, this year International Conference on Education, Science and Technology (ICEST, 2022) has the theme: <i>Dynamics of Global Turbulent Era: Building Resilience and Recovery.</i></strong></div>
+                    <div class="margin-d"><strong>The LOC of the ICEST 2022 is ready to accommodate all participants to share their experiences about the global turbulence, resilience and recovery.</strong></div>
+                    <p>Dr. F.O.T.Obasuyi</p>
+                    <p>Ag. Director, CERAD</p>
+                    <p>BOUESTI</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-7">
+            <div class="icons">
+                <div>
+                    <a href="#"><img  src="users-267.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="youtube.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="linkedin-logo-2430.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="mail-2544.png"></a>
+                </div>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>About us</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="who-we-are.html">Who we are</a></p>
+                <p><a class="f-div" href="academic.html/">Academic Events</a></p>
+                <p><a class="f-div" href="publication.html">Publications</a></p>
+                <p><a class="f-div" href="randd.html">Research and Developement Forum</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/cerad-website/">CERAD WEBSITE</a></p>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>connect</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="https://www.ceradconference.com/colloquium/">Colloquium</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/summit-exhibition/">Submit And Exhibition</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/workshop/">Workshop</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/frequently-ask-questions/">Frequently Asked Questions</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/conferences/">ICEST 2021 confrences</a></p>
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright © 2024 International Conference, Bamidele Olumilua University of Education, Science and Technology | Powered by  Remonic IT Consultant
+        </footer>
+    </div>
+
+
+</body>
+</html>

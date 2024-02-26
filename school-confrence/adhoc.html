@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            color: whitesmoke;
+        }
+        
+        .header-list{
+            list-style: none;
+           
+        }
+        
+        .header-link{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        header{
+            height: 60px;
+            background-color: green;
+            display: grid;
+            place-items: center;
+            width: 100%; 
+        }
+
+        .section{
+            background:linear-gradient(green,blue);
+            z-index: 100;
+            position: absolute;
+            opacity:0.3;
+            width: 100%;
+            height: 350px;
+        }
+
+        .mountain{
+            background-image: url('mount.jpg');
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed ;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact{
+           font-size: 3em;
+           color: white; 
+           z-index: 200;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="header-ul">
+                <li class="header-list"><a class="header-link" href="home.html">Home</a></li>
+                <li class="header-list"><a class="header-link"href="who-we-are.html">Who we are</a></li>
+                <li class="header-list"><a class="header-link"href="academic.html">Academic Events</a></li>
+                <li class="header-list"><a class="header-link"href="publication.html">Publication</a></li>
+                <li class="header-list"><a class="header-link"href="randd.html">R & D Forum</a></li>
+                <li class="header-list"><a class="header-link"href="contact.html">Contact</a></li>
+                <li class="header-list"><a class="header-link"href="submit.html">Submit Abstract</a></li>
+                <li class="header-list"><a class="header-link"href="submit-article.html">Paper Submission</a></li>
+                <li class="header-list"><a class="header-link"href="adhoc.html">ADHOC Members</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="section"></div>
+            <div class="mountain"><h1 class="contact">ABOUT US</h1></div>
+        </section>

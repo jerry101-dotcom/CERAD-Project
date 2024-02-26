@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            color: whitesmoke;
+            flex-wrap: wrap;
+           
+        }
+        
+        .header-list{
+            list-style: none;
+            padding: 0.8em;
+        }
+        
+        .header-link{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        header{
+            height: 60px;
+            background-color: green;
+            display: grid;
+            place-items: center;
+            width: 100%; 
+            height: 100px;
+        }
+
+        
+        .section{
+            background:linear-gradient(green,blue);
+            z-index: 100;
+            position: absolute;
+            opacity:0.3;
+            width: 100%;
+            height: 350px;
+        }
+
+        .mountain{
+            background-image: url('mount.jpg');
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed ;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact{
+           font-size: 3em;
+           color: white; 
+           z-index: 200;
+        }
+
+        .background-2{
+            display: flex;
+            justify-content: space-around ;
+            
+        }
+
+        .flex-1 p{
+            margin-top: 30px;
+        }
+
+        .line-height{
+            line-height: 25px;
+        }
+       .p-1{
+        margin-top: 7px;
+        font-size: 0.9em;
+       }
+
+       .italic{
+        font-style: italic;
+       }
+
+       .p-2{
+        margin-top: 2em;
+        font-size: 0.8em;
+       }
+
+       .flex-2:nth-child(2){
+        margin-top: 2em;
+       }
+
+       .background-7{
+        background-color: rgb(27,147,87);
+        color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+        height: 250px;
+        align-items: center;
+        margin-top: 2em;
+    }
+    
+    .f-div{
+        color: white;
+        transition: 1s;
+    }
+    
+    .f-div:hover{
+        text-decoration: none;
+        color: rgb(245,240,18);
+        transition:.5s;
+    }
+    
+    footer{
+        height: 60px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .icons{
+        display:flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+    
+    .icons div{
+        background-color: white;
+        width:120px;
+        border-radius: 50%;
+        height:50px;
+        margin-left: 10px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .icons div img{
+        scale: 50%;
+    }
+
+    @media (max-width:900px){
+        .background-2{
+            flex-wrap: wrap;
+        }
+
+        .flex-1, .flex-2{
+            width: 100%;
+        }
+    }
+
+    @media (max-width:760px){
+        body{
+            font-size: 0.9em;
+        }
+
+        .background-7{
+        
+            flex-direction: column;
+            height: 800px;
+        }
+
+        header{
+            height: 130px;
+        }
+    }
+
+    @media (max-width:400px){
+        body{
+            font-size: 0.8em;
+        }
+
+        header{
+            height: 130px;
+        }
+    }
+
+
+    
+    
+
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="header-ul">
+                <li class="header-list"><a class="header-link" href="home.html">Home</a></li>
+                <li class="header-list"><a class="header-link"href="who-we-are.html">Who we are</a></li>
+                <li class="header-list"><a class="header-link"href="academic.html">Academic Events</a></li>
+                <li class="header-list"><a class="header-link"href="publication.html">Publication</a></li>
+                <li class="header-list"><a class="header-link"href="randd.html">R & D Forum</a></li>
+                <li class="header-list"><a class="header-link"href="contact.html">Contact</a></li>
+                <li class="header-list"><a class="header-link"href="submit.html">Submit Abstract</a></li>
+                <li class="header-list"><a class="header-link"href="submit-article.html">Paper Submission</a></li>
+                <li class="header-list"><a class="header-link"href="adhoc.html">ADHOC Members</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="section"></div>
+            <div class="mountain"><h1 class="contact">PUBLICATIONS</h1></div>
+        </section>
+
+       <div class="background-2">
+        <div claSS="flex-1">
+            <p>The Centre for Research and Development (CERAD) has four (4) Journal <br>publications at its disposal.</p>
+            <p><strong>Ikere Journal of Humanities</strong></p>
+            <p>Editor-in-Chief: Prof.      <i>Olufemi Victor Adeoluwa –</i></p>
+            <p><strong>Ikere Journal of Science</strong></p>
+            <p>Editor-in-Chief:    Associate Prof. Dr. E.M. Alake</p>
+            <p>Ikere Journal of Vocational and Technical Education</p>
+            <p>Editor-in-Chief:       Associate Prof. Dr. Veronica Ibitola Makinde</p>
+            <p><strong>Journal of College of Education</strong></p>
+            <p>Editor-in-Chief:  Prof.          Olufemi Victor Adeoluwa</p>
+            <p>The Centre equally affiliates with the Department of Economics, </p>
+            <p>BOUESTI journal. The title of the Journal is Journal of Economic, Social and<br> Educational Issues (JESEI)</p>
+            <p></p>
+        </div>
+
+        <div class="flex-2">
+            <p><strong>CONFERENCE LOCAL ORGANISING COMMITTEE (LOC)</strong></p>
+            <p class="p-1"><strong>Team Heads:</strong></p>
+            <p class="p-2 italic">Planning and Logistic Team</p>
+            <p>Dr. F.O.T. OBASUYI</p>
+            <p>obasuyi.tope@bouesti.edu.ng</p>
+            <p class="p-2 italic">Technical Team</p>
+            <p>Aderemi OGUNMODEDE</p>
+            <p class="p-2 italic">Marketing Team</p>
+            <p>Dr. O.V. ADEYELE</p>
+            <p class="p-2 italic">Finance Team</p>
+            <p class="line-height">Dr. Bankole FALOYE</p>
+            <p class="line-height"><strong>Local Organising Committee –</strong></p>
+            <p class="line-height">Dr. F.O.T. OBASUYI                           Chairman</p>
+            <p class="line-height"><strong>Local Organising Committee –</strong></p>
+            <p class="line-height">Dr. S.O. ILORI                                     Secretary</p>
+            <p class="line-height"><strong>Conference Consultant:</strong></p>
+            <p class="line-height">Prof J.O. ADEGUN                              Provost, College of Education,</p>
+            <p class="line-height"><strong>Chief Host</strong></p>
+            <p class="line-height">Prof. O.V. ADEOLUWA                      Vice Chancellor, BOUESTI</p>
+        </div>
+       </div> 
+
+       <div class="background-7">
+            <div class="icons">
+                <div>
+                    <a href="#"><img  src="users-267.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="youtube.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="linkedin-logo-2430.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="mail-2544.png"></a>
+                </div>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>About us</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="who-we-are.html">Who we are</a></p>
+                <p><a class="f-div" href="academic.html/">Academic Events</a></p>
+                <p><a class="f-div" href="publication.html">Publications</a></p>
+                <p><a class="f-div" href="randd.html">Research and Developement Forum</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/cerad-website/">CERAD WEBSITE</a></p>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>connect</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="https://www.ceradconference.com/colloquium/">Colloquium</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/summit-exhibition/">Submit And Exhibition</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/workshop/">Workshop</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/frequently-ask-questions/">Frequently Asked Questions</a></p>
+                <p><a class="f-div"  href="https://www.ceradconference.com/conferences/">ICEST 2021 confrences</a></p>
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright © 2024 International Conference, Bamidele Olumilua University of Education, Science and Technology | Powered by  Remonic IT Consultant
+        </footer>
+    </div>

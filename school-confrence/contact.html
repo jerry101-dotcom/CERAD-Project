@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <style>
+
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            color: whitesmoke;
+            flex-wrap: wrap;
+        }
+        
+        .header-list{
+            list-style: none;
+           padding: 0.8em;
+        }
+        
+        .header-link{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        header{
+            height: 100px;
+            background-color:green;
+            display: grid;
+            place-items: center;
+            width: 100%; 
+            
+        }
+
+        .section{
+            background:linear-gradient(green,blue);
+            z-index: 100;
+            position: absolute;
+            opacity:0.3;
+            width: 100%;
+            height: 350px;
+        }
+
+        .mountain{
+            background-image: url('mount.jpg');
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed ;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact{
+           font-size: 3em;
+           color: white; 
+           z-index: 200;
+        }
+
+        .background-2{
+            display:flex;
+            justify-content: space-around;
+            
+        }
+
+        .flex{
+            width: 45%;
+            margin-top: 2em;
+           height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            display: block;
+        }
+
+        .flex-2{
+            width: 50%;
+            margin-top: 2em;
+        }
+
+        .background-2 h2{
+            color: red;
+        }
+
+        .div-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100px;
+        }
+
+        .flex h4{
+            color: green;
+            margin-top:3em;
+        }
+
+        .div-1 ul li{
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+
+        .div-2 ul li{
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+
+        .div-3 p{
+            line-height: 25px;
+            margin-top: 1em;
+        }
+
+        .div-3 p a{
+            color: green;
+        }
+
+        .div-3{
+            margin-top: 2em;
+        }
+
+        .flex-2 div input{
+            width: 100%;
+            height: 50px;
+        } 
+
+        .flex-2 div p{
+            margin-bottom: 1em;
+        }
+
+        button{
+            width: 130px;
+            height: 45px;
+            color: rgb(41, 189, 247);
+            border: 2px solid rgb(41, 189, 247);
+            background-color: white;
+            margin-top:2em;
+            font-weight: lighter;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .background-7{
+            background-color: rgb(27,147,87);
+            color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            height: 250px;
+            align-items: center;
+            margin-top: 2em;
+        }
+        
+        .f-div{
+            color: white;
+            transition: 1s;
+        }
+        
+        .f-div:hover{
+            text-decoration: none;
+            color: rgb(245,240,18);
+            transition:.5s;
+        }
+        
+        footer{
+            height: 60px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons{
+            display:flex;
+            justify-content: space-between;
+            width: 250px;
+        }
+        
+        .icons div{
+            background-color: white;
+            width:120px;
+            border-radius: 50%;
+            height:50px;
+            margin-left: 10px;
+            display: grid;
+            place-items: center;
+        }
+        
+        .icons div img{
+            scale: 50%;
+        }
+        
+        @media (max-width:900px){
+            header{
+                height: 100px;
+            }
+        }
+        
+        @media (max-width:768px){
+            body{
+            
+                font-size: 0.85em;
+            }
+
+            .flex-2 div input{
+                height: 30px;
+            }
+            .flex-2{
+                width: 100%;
+                
+            }
+            .flex-2 div{
+                width: 90%;
+            }
+
+            .flex .div-3 p{
+                width: 100%;
+                padding: 0;
+            }
+            .background-2{
+                flex-direction: column;
+                height: 1800px;
+               justify-content: space-between;
+                
+                flex-wrap: wrap;
+            }
+
+            .background-2 div, .background-2 img{
+                width: 100%;
+            }
+
+            .background-2 div{
+                padding: 1em;
+            }
+
+            .background-2 .flex-1 div p{
+                width: 100%;
+            }
+
+            header{
+                height: 130px;
+                font-size: 0.95em;
+            }
+
+            header ul li a:hover{
+                text-decoration: underline;
+
+            }
+
+            .contact{
+                text-align: center;
+            }
+
+            .background-7{
+                margin-top: 30em;
+                flex-direction: column;
+                height: 800px;
+            }
+
+            .flex-1{
+                padding-left: 0em;
+                padding-right: 0em;
+            }
+
+            .flex-1 button{
+                margin-top: 3em;
+            }
+
+            .background-7{
+                margin-top: 2em;
+            }
+            
+        }
+
+        @media (max-width:400px){
+            body{
+                font-size: 0.7em;
+            }
+
+            .background-2{
+                height: 1500px;
+            }
+
+            .background-7{
+                margin-top: 1em;
+            }
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="header-ul">
+                <li class="header-list"><a class="header-link" href="home.html">Home</a></li>
+                <li class="header-list"><a class="header-link"href="who-we-are.html">Who we are</a></li>
+                <li class="header-list"><a class="header-link"href="academic.html">Academic Events</a></li>
+                <li class="header-list"><a class="header-link"href="publication.html">Publication</a></li>
+                <li class="header-list"><a class="header-link"href="randd.html">R & D Forum</a></li>
+                <li class="header-list"><a class="header-link"href="contact.html">Contact</a></li>
+                <li class="header-list"><a class="header-link"href="submit.html">Submit Abstract</a></li>
+                <li class="header-list"><a class="header-link"href="submit-article.html">Paper Submission</a></li>
+                <li class="header-list"><a class="header-link"href="adhoc.html">ADHOC Members</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="section"></div>
+            <div class="mountain"><h1 class="contact">CONTACT</h1></div>
+        </section>
+
+        <div class="background-2">
+            <div class="flex">
+                <div class="div-1">
+                    <h2>Get In Touch</h2>
+                    <h4>Number</h4>
+                    <ul>
+                        <li> <a href="tel:(123)%20456%207890">+234 806 243 9687</a></li>
+                    </ul>
+                </div>
+
+                <div class="div-2">
+                    <h4>Email</h4>
+                    <ul>
+                        <li><a href="#">editor@ceradconference.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="div-3">
+                    <h3>Inquiry</h3>
+
+                    <p>If you have questions about this conference and exhibitions, please contact the conference Chairman, LOC via the conference official website http://www.ceradconference.com/contact/ or email – <a href ="cerad@bouesti.edu.ng">cerad@bouesti.edu.ng</a> and <a href="cerad.info@bouesti.edu.ng">cerad.info@bouesti.edu.ng.</a> The submission of abstracts and full papers must go through the official conference website:<a href="http://www.ceradconference.com/"> http://www.ceradconference.com/.</a> Also, the Chairman can quickly be reached through the WhatsApp number: +234-8062439687</p>
+                </div>
+            </div>
+
+            <div class="flex-2">
+                <h2>Send us a message</h2>
+                <div>
+                    <p style="margin-top:2em;">Name of author</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>email</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Telephone-no.</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Instituition</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>City</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Country</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Message</p>
+                    <p contenteditable="true" style= "outline:none; height:200px; border:1px solid black;"></p>
+                </div>
+
+                <button>submit</button>
+            </div>
+        </div>
+
+        <div class="background-7">
+            <div class="icons">
+                <div>
+                    <a href="#"><img  src="users-267.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="youtube.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="linkedin-logo-2430.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="mail-2544.png"></a>
+                </div>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>About us</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="who-we-are.html">Who we are</a></p>
+                <p><a class="f-div" href="academic.html/">Academic Events</a></p>
+                <p><a class="f-div" href="publication.html">Publications</a></p>
+                <p><a class="f-div" href="randd.html">Research and Developement Forum</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/cerad-website/">CERAD WEBSITE</a></p>
+            </div>
+
+            <div style="line-height:25px;">
+                <p style="font-size:1.2em;"><strong>connect</strong></p>
+                <p style="margin-top:2em;"><a class="f-div"  href="https://www.ceradconference.com/colloquium/">Colloquium</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/summit-exhibition/">Submit And Exhibition</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/workshop/">Workshop</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/frequently-ask-questions/">Frequently Asked Questions</a></p>
+                <p><a class="f-div" href="https://www.ceradconference.com/conferences/">ICEST 2021 confrences</a></p>
+            </div>
+
+        </div>
+
+        <footer>
+            Copyright © 2024 International Conference, Bamidele Olumilua University of Education, Science and Technology | Powered by  Remonic IT Consultant
+        </footer>
+    </div>
+
+
+    </div>
+</body>
+</html>
